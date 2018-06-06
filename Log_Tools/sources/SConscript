@@ -1,0 +1,6 @@
+Import('env', 'opt', 'dbg')
+
+source = 'Logger.cpp'
+
+opt.Object('Logger', source)
+dbg.Object('Logger-dbg', source)

@@ -1,0 +1,10 @@
+First message
+[ERROR]: 'Testing' occured in
+'test.cpp' @ line 30 in 'int main()' function
+First message
+[ERROR]: 'Testing' occured in
+'test.cpp' @ line 29 in 'int main()' function
+Just this message
+[ERROR]: 'Testing' occured in
+'test.cpp' @ line 29 in 'int main()' function
+Just this message

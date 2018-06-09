@@ -1,6 +1,0 @@
-Import('env', 'opt', 'dbg')
-
-source = 'FSystem_Tools.cpp'
-
-opt.Object('FSystem_Tools', source)
-dbg.Object('FSystem_Tools-dbg', source)

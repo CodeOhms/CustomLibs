@@ -1,6 +1,0 @@
-Import('env', 'opt', 'dbg')
-
-source = 'Thermal.cpp'
-
-opt.Object('Thermal', source)
-dbg.Object('Thermal-dbg', source)

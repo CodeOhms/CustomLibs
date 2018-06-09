@@ -1,6 +1,0 @@
-Import('env', 'opt', 'dbg')
-
-source = 'Time_Tools.cpp'
-
-opt.Object('Time', source)
-dbg.Object('Time-dbg', source)

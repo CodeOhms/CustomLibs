@@ -44,6 +44,9 @@ class Timer
 
     void sleepAndRun()
     {
+        if(alive)
+            userFunction()();
+
         switch(intervalUnit)
         {
             case timeUnits::milliseconds:
@@ -63,18 +66,19 @@ class Timer
                   std::chrono::hours(interval) );
                 break;
         }
-
-        if(alive)
-            userFunction()();
     }
     void threadFunc()
     {
         if(callNumber == infinite)
+        {
             while(alive)
                 sleepAndRun();
+        }
         else
+        {
             while(repeatCount--)
                 sleepAndRun();
+        }
     }
 
     bool unitCheck(unsigned unit)

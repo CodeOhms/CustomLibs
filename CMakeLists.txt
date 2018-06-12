@@ -9,13 +9,13 @@ if(NOT DEP_USE_EXISTING)
                             #"         "/lib
 endif()
 add_library(FSystem OBJECT
-  "${CMAKE_CURRENT_SOURCE_DIR}/File_System_Tools/include/FSystem_Tools.cpp")
+  "${CMAKE_CURRENT_SOURCE_DIR}/File_System_Tools/sources/FSystem_Tools.cpp")
 add_library(Logging OBJECT
-  "${CMAKE_CURRENT_SOURCE_DIR}/Log_Tools/include/Logger.cpp")
+  "${CMAKE_CURRENT_SOURCE_DIR}/Log_Tools/sources/Logger.cpp")
 add_library(Time OBJECT
-  "${CMAKE_CURRENT_SOURCE_DIR}/Misc_Tools/Time_Tools/include/Time_Tools.cpp")
+  "${CMAKE_CURRENT_SOURCE_DIR}/Misc_Tools/Time_Tools/sources/Time_Tools.cpp")
 add_library(Thermal OBJECT
-  "${CMAKE_CURRENT_SOURCE_DIR}/Misc_Tools/Thermal_Tools/include/Thermal.cpp")
+  "${CMAKE_CURRENT_SOURCE_DIR}/Misc_Tools/Thermal_Tools/sources/Thermal.cpp")
 
     #Boost uses shared libraries by default
     #Boost_REALPATH is needed to use libs supplied
